@@ -23,7 +23,7 @@ fi
 mkdir -p data
 cd data
 
-CMD="${YOUTUBE_DL_CMD} -x --yes-playlist ${PLAYLIST} --playlist-end ${END}"
+CMD="${YOUTUBE_DL_CMD} -x --audio-format wav --yes-playlist ${PLAYLIST} --playlist-end ${END}"
 $CMD
 
 cd ..
